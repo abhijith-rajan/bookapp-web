@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.2.1.js"></script>
+<link href="jquery.page.css" rel="stylesheet">
+<script src="jquery.page.js"></script>
+<script>
+$(".wrapper").page();
+</script>
+<link href="i1.css" rel="stylesheet" type="text/css"/>
+<script src="index1.js" type="text/javascript">
+</script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<div class="device">
+<div class="screen">
+<div>
+	<div class="page" data-jquery-page-name="0">
+                        <div class="title">Index</div>
+                        <div class="navigate" data-page-name="1" data-page-trans="slide-in-from-right">Register</div>
+                        <div class="navigate" data-page-name="2" data-page-trans="flip-towards-left">Login</div>
+                        <div class="navigate" data-page-name="3" data-page-trans="flip-towards-right">Test</div>
+    </div>
+	<div class="page" data-jquery-page-name="1">
+			<div class="title">Register</div>
+			<div>
+			<iframe src="Register.jsp" seamless></iframe></div>
+			<div class="navigate" data-page-name="0" data-page-trans="slide-in-from-left">Index</div>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>
